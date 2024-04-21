@@ -31,6 +31,7 @@ if(isset($_POST['submit'])) {
         header('Location: hw_index.php');
     }
 }
+
 ?>
 <div class="container">
     <div class="row">

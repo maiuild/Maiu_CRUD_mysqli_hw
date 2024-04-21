@@ -1,12 +1,12 @@
-error_reporting(E_ALL);
 <?php 
+error_reporting(E_ALL);
 // Kas ids on ja kas on number
 if(isset($_GET['ids']) && is_numeric($_GET['ids'])) {
     $id = $_GET['ids'];
     if(is_numeric($id)) {
         $sql = 'SELECT * FROM simple WHERE id = '.$id;
         $res = $database->dbGetArray($sql);
-        $database->show($res); //Test
+        // $database->show($res); //Test
     }
 }
 ?>
@@ -17,7 +17,8 @@ if(isset($_GET['ids']) && is_numeric($_GET['ids'])) {
         <div class="col-sm-8">
             <h3 class="text-center">Update - Muuda tabeli kirjet</h3>
 
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>?page=update" method="post">
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>?page=hw_update" href="hw_index.php" method="post">
+            <!--<form action="hw_index.php" method="update">-->
                 <div class="row mb-2">
                     <label for="name" class="col-sm-2 form-label mt-1 fw-bold">Nimi</label>
                     <div class="col">
