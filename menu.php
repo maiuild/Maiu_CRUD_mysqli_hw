@@ -11,7 +11,7 @@
                     <a class="nav-link" href="index.php?page=read"><i class="fa-solid fa-book-open text-primary"></i> Read</a>
                     <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF']; ?>?page=update"><i class="fa-solid fa-pen-to-square text-warning"></i> Update</a>
                     <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF']; ?>?page=delete"><i class="fa-regular fa-trash-can text-danger"></i> Delete</a>
-                    <a class="nav-link" href="hw_index.php"><i class="fa-brands fa-font-awesome" style="color:blueviolet"></i> Homework</a>
+                    <a class="nav-link" href="hw_index.php"><i class="fa-solid fa-house" style="color:blueviolet"></i> Homework</a>
                 </div>
             </div>
         </div>
